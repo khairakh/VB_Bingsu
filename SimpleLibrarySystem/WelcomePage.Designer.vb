@@ -22,10 +22,13 @@ Partial Class WelcomePage
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(WelcomePage))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.loginBtn = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -34,7 +37,7 @@ Partial Class WelcomePage
         Me.Label1.BackColor = System.Drawing.Color.White
         Me.Label1.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.PaleVioletRed
-        Me.Label1.Location = New System.Drawing.Point(177, 146)
+        Me.Label1.Location = New System.Drawing.Point(243, 193)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(307, 25)
         Me.Label1.TabIndex = 56
@@ -46,7 +49,7 @@ Partial Class WelcomePage
         Me.Label2.BackColor = System.Drawing.Color.White
         Me.Label2.Font = New System.Drawing.Font("Modern No. 20", 21.9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.PaleVioletRed
-        Me.Label2.Location = New System.Drawing.Point(256, 114)
+        Me.Label2.Location = New System.Drawing.Point(322, 161)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(131, 31)
         Me.Label2.TabIndex = 57
@@ -58,7 +61,7 @@ Partial Class WelcomePage
         Me.Label3.BackColor = System.Drawing.Color.White
         Me.Label3.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(240, 87)
+        Me.Label3.Location = New System.Drawing.Point(306, 133)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(181, 25)
         Me.Label3.TabIndex = 58
@@ -69,13 +72,27 @@ Partial Class WelcomePage
         Me.loginBtn.BackColor = System.Drawing.Color.LightPink
         Me.loginBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.loginBtn.FlatAppearance.BorderSize = 3
-        Me.loginBtn.Location = New System.Drawing.Point(279, 185)
+        Me.loginBtn.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.loginBtn.Location = New System.Drawing.Point(340, 242)
         Me.loginBtn.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
         Me.loginBtn.Name = "loginBtn"
-        Me.loginBtn.Size = New System.Drawing.Size(59, 31)
+        Me.loginBtn.Size = New System.Drawing.Size(76, 40)
         Me.loginBtn.TabIndex = 59
         Me.loginBtn.Text = "ENTER"
         Me.loginBtn.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox1.Image = Global.BingsuSystem.My.Resources.Resources.WhatsApp_Image_2021_10_29_at_11_01_12_PM_removebg_preview
+        Me.PictureBox1.Location = New System.Drawing.Point(220, 107)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(82, 85)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 60
+        Me.PictureBox1.TabStop = False
         '
         'WelcomePage
         '
@@ -83,14 +100,17 @@ Partial Class WelcomePage
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.BingsuSystem.My.Resources.Resources.WhatsApp_Image_2021_11_03_at_9_50_18_PM
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(623, 339)
+        Me.ClientSize = New System.Drawing.Size(751, 425)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.loginBtn)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
         Me.Name = "WelcomePage"
         Me.Text = "BINGSU"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -100,4 +120,5 @@ Partial Class WelcomePage
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents loginBtn As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

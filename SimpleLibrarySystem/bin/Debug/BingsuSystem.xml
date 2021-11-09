@@ -22,6 +22,16 @@ BingsuSystem
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:BingsuSystem.My.Resources.Resources.WhatsApp_Image_2021_10_29_at_11_01_12_PM">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:BingsuSystem.My.Resources.Resources.WhatsApp_Image_2021_10_29_at_11_01_12_PM_removebg_preview">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:BingsuSystem.My.Resources.Resources.WhatsApp_Image_2021_11_03_at_9_50_18_PM">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

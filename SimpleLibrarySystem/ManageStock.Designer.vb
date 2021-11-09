@@ -23,6 +23,7 @@ Partial Class ManageStock
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ManageStock))
         Me.user_btnCancel = New System.Windows.Forms.Button()
         Me.user_lblMaxRec = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -63,6 +64,7 @@ Partial Class ManageStock
         'user_btnCancel
         '
         Me.user_btnCancel.BackColor = System.Drawing.Color.White
+        Me.user_btnCancel.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold)
         Me.user_btnCancel.Location = New System.Drawing.Point(298, 167)
         Me.user_btnCancel.Name = "user_btnCancel"
         Me.user_btnCancel.Size = New System.Drawing.Size(66, 55)
@@ -73,7 +75,7 @@ Partial Class ManageStock
         'user_lblMaxRec
         '
         Me.user_lblMaxRec.BackColor = System.Drawing.Color.Lavender
-        Me.user_lblMaxRec.Location = New System.Drawing.Point(131, 190)
+        Me.user_lblMaxRec.Location = New System.Drawing.Point(149, 194)
         Me.user_lblMaxRec.Name = "user_lblMaxRec"
         Me.user_lblMaxRec.Size = New System.Drawing.Size(24, 14)
         Me.user_lblMaxRec.TabIndex = 20
@@ -100,6 +102,7 @@ Partial Class ManageStock
         Me.GroupBox1.Controls.Add(Me.user_lblQuantity)
         Me.GroupBox1.Controls.Add(Me.user_lblName)
         Me.GroupBox1.Controls.Add(Me.user_lblID)
+        Me.GroupBox1.Font = New System.Drawing.Font("Century Gothic", 8.25!)
         Me.GroupBox1.Location = New System.Drawing.Point(26, 105)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(370, 280)
@@ -110,6 +113,7 @@ Partial Class ManageStock
         'user_btnUpdate
         '
         Me.user_btnUpdate.BackColor = System.Drawing.Color.White
+        Me.user_btnUpdate.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold)
         Me.user_btnUpdate.Location = New System.Drawing.Point(298, 97)
         Me.user_btnUpdate.Name = "user_btnUpdate"
         Me.user_btnUpdate.Size = New System.Drawing.Size(66, 65)
@@ -119,7 +123,7 @@ Partial Class ManageStock
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(49, 207)
+        Me.ProgressBar1.Location = New System.Drawing.Point(67, 211)
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.Size = New System.Drawing.Size(100, 23)
         Me.ProgressBar1.TabIndex = 16
@@ -127,63 +131,64 @@ Partial Class ManageStock
         'user_lblOf
         '
         Me.user_lblOf.AutoSize = True
-        Me.user_lblOf.Location = New System.Drawing.Point(109, 190)
+        Me.user_lblOf.Location = New System.Drawing.Point(127, 194)
         Me.user_lblOf.Name = "user_lblOf"
-        Me.user_lblOf.Size = New System.Drawing.Size(16, 13)
+        Me.user_lblOf.Size = New System.Drawing.Size(18, 16)
         Me.user_lblOf.TabIndex = 15
         Me.user_lblOf.Text = "of"
         '
         'user_lblNumRec
         '
         Me.user_lblNumRec.AutoSize = True
-        Me.user_lblNumRec.Location = New System.Drawing.Point(90, 190)
+        Me.user_lblNumRec.Location = New System.Drawing.Point(108, 194)
         Me.user_lblNumRec.Name = "user_lblNumRec"
-        Me.user_lblNumRec.Size = New System.Drawing.Size(13, 13)
+        Me.user_lblNumRec.Size = New System.Drawing.Size(14, 16)
         Me.user_lblNumRec.TabIndex = 14
         Me.user_lblNumRec.Text = "1"
         '
         'user_lblRecords
         '
         Me.user_lblRecords.AutoSize = True
-        Me.user_lblRecords.Location = New System.Drawing.Point(38, 190)
+        Me.user_lblRecords.Location = New System.Drawing.Point(56, 194)
         Me.user_lblRecords.Name = "user_lblRecords"
-        Me.user_lblRecords.Size = New System.Drawing.Size(50, 13)
+        Me.user_lblRecords.Size = New System.Drawing.Size(54, 16)
         Me.user_lblRecords.TabIndex = 13
         Me.user_lblRecords.Text = "Records:"
         '
         'user_lblRefresh
         '
         Me.user_lblRefresh.AutoSize = True
-        Me.user_lblRefresh.Location = New System.Drawing.Point(66, 158)
+        Me.user_lblRefresh.Location = New System.Drawing.Point(84, 162)
         Me.user_lblRefresh.Name = "user_lblRefresh"
-        Me.user_lblRefresh.Size = New System.Drawing.Size(67, 13)
+        Me.user_lblRefresh.Size = New System.Drawing.Size(71, 16)
         Me.user_lblRefresh.TabIndex = 11
         Me.user_lblRefresh.Text = "Refreshing..."
         '
         'user_txtQuantity
         '
-        Me.user_txtQuantity.Location = New System.Drawing.Point(68, 76)
+        Me.user_txtQuantity.Location = New System.Drawing.Point(81, 110)
         Me.user_txtQuantity.Name = "user_txtQuantity"
-        Me.user_txtQuantity.Size = New System.Drawing.Size(100, 20)
+        Me.user_txtQuantity.Size = New System.Drawing.Size(119, 21)
         Me.user_txtQuantity.TabIndex = 11
         '
         'user_txtName
         '
-        Me.user_txtName.Location = New System.Drawing.Point(68, 50)
+        Me.user_txtName.Location = New System.Drawing.Point(81, 84)
         Me.user_txtName.Name = "user_txtName"
-        Me.user_txtName.Size = New System.Drawing.Size(100, 20)
+        Me.user_txtName.Size = New System.Drawing.Size(119, 21)
         Me.user_txtName.TabIndex = 10
         '
         'user_txtID
         '
-        Me.user_txtID.Location = New System.Drawing.Point(68, 26)
+        Me.user_txtID.Location = New System.Drawing.Point(81, 60)
         Me.user_txtID.Name = "user_txtID"
-        Me.user_txtID.Size = New System.Drawing.Size(100, 20)
+        Me.user_txtID.Size = New System.Drawing.Size(119, 21)
         Me.user_txtID.TabIndex = 9
         '
         'user_btnRefresh
         '
         Me.user_btnRefresh.BackColor = System.Drawing.Color.White
+        Me.user_btnRefresh.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold)
         Me.user_btnRefresh.Location = New System.Drawing.Point(226, 225)
         Me.user_btnRefresh.Name = "user_btnRefresh"
         Me.user_btnRefresh.Size = New System.Drawing.Size(66, 49)
@@ -194,6 +199,7 @@ Partial Class ManageStock
         'user_btnDelete
         '
         Me.user_btnDelete.BackColor = System.Drawing.Color.White
+        Me.user_btnDelete.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold)
         Me.user_btnDelete.Location = New System.Drawing.Point(226, 97)
         Me.user_btnDelete.Name = "user_btnDelete"
         Me.user_btnDelete.Size = New System.Drawing.Size(66, 64)
@@ -204,6 +210,7 @@ Partial Class ManageStock
         'user_btnEdit
         '
         Me.user_btnEdit.BackColor = System.Drawing.Color.White
+        Me.user_btnEdit.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold)
         Me.user_btnEdit.Location = New System.Drawing.Point(226, 167)
         Me.user_btnEdit.Name = "user_btnEdit"
         Me.user_btnEdit.Size = New System.Drawing.Size(66, 55)
@@ -214,6 +221,7 @@ Partial Class ManageStock
         'user_btnSave
         '
         Me.user_btnSave.BackColor = System.Drawing.Color.White
+        Me.user_btnSave.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold)
         Me.user_btnSave.Location = New System.Drawing.Point(298, 26)
         Me.user_btnSave.Name = "user_btnSave"
         Me.user_btnSave.Size = New System.Drawing.Size(66, 66)
@@ -224,6 +232,7 @@ Partial Class ManageStock
         'user_btnAddNew
         '
         Me.user_btnAddNew.BackColor = System.Drawing.Color.White
+        Me.user_btnAddNew.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold)
         Me.user_btnAddNew.Location = New System.Drawing.Point(226, 26)
         Me.user_btnAddNew.Name = "user_btnAddNew"
         Me.user_btnAddNew.Size = New System.Drawing.Size(66, 65)
@@ -234,27 +243,27 @@ Partial Class ManageStock
         'user_lblQuantity
         '
         Me.user_lblQuantity.AutoSize = True
-        Me.user_lblQuantity.Location = New System.Drawing.Point(13, 77)
+        Me.user_lblQuantity.Location = New System.Drawing.Point(14, 111)
         Me.user_lblQuantity.Name = "user_lblQuantity"
-        Me.user_lblQuantity.Size = New System.Drawing.Size(49, 13)
+        Me.user_lblQuantity.Size = New System.Drawing.Size(59, 16)
         Me.user_lblQuantity.TabIndex = 2
         Me.user_lblQuantity.Text = "Quantity:"
         '
         'user_lblName
         '
         Me.user_lblName.AutoSize = True
-        Me.user_lblName.Location = New System.Drawing.Point(24, 52)
+        Me.user_lblName.Location = New System.Drawing.Point(25, 86)
         Me.user_lblName.Name = "user_lblName"
-        Me.user_lblName.Size = New System.Drawing.Size(38, 13)
+        Me.user_lblName.Size = New System.Drawing.Size(44, 16)
         Me.user_lblName.TabIndex = 1
         Me.user_lblName.Text = "Name:"
         '
         'user_lblID
         '
         Me.user_lblID.AutoSize = True
-        Me.user_lblID.Location = New System.Drawing.Point(42, 26)
+        Me.user_lblID.Location = New System.Drawing.Point(43, 60)
         Me.user_lblID.Name = "user_lblID"
-        Me.user_lblID.Size = New System.Drawing.Size(21, 13)
+        Me.user_lblID.Size = New System.Drawing.Size(22, 16)
         Me.user_lblID.TabIndex = 0
         Me.user_lblID.Text = "ID:"
         '
@@ -295,6 +304,7 @@ Partial Class ManageStock
         Me.GroupBox2.Controls.Add(Me.user_btnNext)
         Me.GroupBox2.Controls.Add(Me.user_btnPrevious)
         Me.GroupBox2.Controls.Add(Me.user_btnFirst)
+        Me.GroupBox2.Font = New System.Drawing.Font("Century Gothic", 8.25!)
         Me.GroupBox2.Location = New System.Drawing.Point(61, 402)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(298, 59)
@@ -318,7 +328,7 @@ Partial Class ManageStock
         Me.user_cboCategory.Items.AddRange(New Object() {"All", "Ingredient", "Flavour", "Toppings", "Ice Cream Base", "Handpacked"})
         Me.user_cboCategory.Location = New System.Drawing.Point(64, 76)
         Me.user_cboCategory.Name = "user_cboCategory"
-        Me.user_cboCategory.Size = New System.Drawing.Size(131, 21)
+        Me.user_cboCategory.Size = New System.Drawing.Size(131, 24)
         Me.user_cboCategory.TabIndex = 10
         '
         'GroupBox3
@@ -327,6 +337,7 @@ Partial Class ManageStock
         Me.GroupBox3.Controls.Add(Me.user_cboCategory)
         Me.GroupBox3.Controls.Add(Me.user_btnSearch)
         Me.GroupBox3.Controls.Add(Me.user_lblCategory)
+        Me.GroupBox3.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.Location = New System.Drawing.Point(414, 105)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(201, 280)
@@ -337,6 +348,7 @@ Partial Class ManageStock
         'user_btnSearch
         '
         Me.user_btnSearch.BackColor = System.Drawing.Color.White
+        Me.user_btnSearch.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold)
         Me.user_btnSearch.Location = New System.Drawing.Point(109, 128)
         Me.user_btnSearch.Name = "user_btnSearch"
         Me.user_btnSearch.Size = New System.Drawing.Size(74, 58)
@@ -347,9 +359,10 @@ Partial Class ManageStock
         'user_lblCategory
         '
         Me.user_lblCategory.AutoSize = True
+        Me.user_lblCategory.Font = New System.Drawing.Font("Century Gothic", 8.25!)
         Me.user_lblCategory.Location = New System.Drawing.Point(6, 79)
         Me.user_lblCategory.Name = "user_lblCategory"
-        Me.user_lblCategory.Size = New System.Drawing.Size(52, 13)
+        Me.user_lblCategory.Size = New System.Drawing.Size(62, 16)
         Me.user_lblCategory.TabIndex = 9
         Me.user_lblCategory.Text = "Category:"
         '
@@ -371,6 +384,7 @@ Partial Class ManageStock
         'user_btnClose
         '
         Me.user_btnClose.BackColor = System.Drawing.Color.White
+        Me.user_btnClose.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold)
         Me.user_btnClose.Location = New System.Drawing.Point(500, 402)
         Me.user_btnClose.Name = "user_btnClose"
         Me.user_btnClose.Size = New System.Drawing.Size(66, 59)
@@ -384,12 +398,13 @@ Partial Class ManageStock
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.BingsuSystem.My.Resources.Resources.WhatsApp_Image_2021_11_03_at_9_50_20_PM
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(658, 474)
+        Me.ClientSize = New System.Drawing.Size(650, 489)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.user_btnClose)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ManageStock"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

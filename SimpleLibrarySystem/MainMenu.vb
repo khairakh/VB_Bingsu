@@ -24,4 +24,5 @@
     Private Sub logoutBtn_Click(sender As Object, e As EventArgs) Handles logoutBtn.Click
         Close()
     End Sub
+
 End Class

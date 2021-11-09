@@ -116,7 +116,6 @@
     Private Sub user_btnDelete_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles user_btnDelete.Click
         Dim cb As New OleDb.OleDbCommandBuilder(da)
 
-
         ds.Tables("bingsu").Rows(counter).Delete()
         MaxRec = MaxRec - 1
 

@@ -167,6 +167,12 @@
   <ItemGroup>
     <None Include="Resources\WhatsApp Image 2021-11-03 at 9.50.19 PM.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-10-29 at 11.01.12 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp_Image_2021-10-29_at_11.01.12_PM-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
